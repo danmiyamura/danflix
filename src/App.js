@@ -10,14 +10,41 @@ function App() {
       <Menu />
 
       <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
+        videoTitle={dadosIniciais.categorias[0].titulo[0]}
         url={dadosIniciais.categorias[0].videos[0].url}
         videoDescription={"O que é Front-end? Trabalhando com mimimi"}
       />
-
-      <Carrousel 
-
+        
+      <Carrousel
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[0]}
       />
+      
+      <Carrousel
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[1]}
+      />
+      
+      <Carrousel
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[2]}
+      />      
+      
+      <Carrousel
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[3]}
+      />      
+      
+      <Carrousel
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[4]}
+      />      
+      
+      <Carrousel
+        ignoreFirstVideo
+        category = {dadosIniciais.categorias[5]}
+      />
+
     </div>
   );
 }
